@@ -1,0 +1,54 @@
+import pygame
+from pygame.locals import *
+
+perso_deplacement = 5
+
+#Initialisation de la bibliothèque Pygame
+pygame.init()
+
+#Ouverture de la fenêtre Pygame
+fenetre = pygame.display.set_mode((640,480))
+
+#Chargement et collage du fond
+fond = pygame.image.load("Res/background.jpg").convert()
+fenetre.blit(fond, (0,0))
+
+#Chargement et collage du personnage
+perso = pygame.image.load("Res/perso.png").convert_alpha()
+position_perso = perso.get_rect()
+fenetre.blit(perso, position_perso)
+
+#Rafraîchissement de l'écran
+pygame.display.flip()
+
+pygame.key.set_repeat(100, 20)
+
+#Boucle infinie
+continuer = 1
+while continuer:
+    for event in pygame.event.get():   #On parcours la liste de tous les événements reçus
+ 
+        if event.type == QUIT:     #Si un de ces événements est de type QUIT
+            continuer = 0      #On arrête la boucle
+
+        if event.type == KEYDOWN:
+            if event.key == K_DOWN:    #Si "flèche bas"
+                position_perso = position_perso.move(0, perso_deplacement) #On descend le perso
+            if event.key == K_UP:    #Si "flèche haut"
+                position_perso = position_perso.move(0, -perso_deplacement) #On monte le perso
+            if event.key == K_LEFT:    #Si "flèche gauche"
+                position_perso = position_perso.move(-perso_deplacement, 0) #On bouge le perso à gauche
+            if event.key == K_RIGHT:    #Si "flèche droite"
+                position_perso = position_perso.move(perso_deplacement, 0) #On bouge le perso à droite
+
+        # Si on clique avec le bouton droit dans la bande de 100px de hauteur d'en haut
+        if event.type == MOUSEBUTTONDOWN and event.button == 3 and event.pos[1] < 100:
+            print("Zone Dangereuse!!")
+
+    #Re-collage
+    fenetre.blit(fond, (0,0))    
+    fenetre.blit(perso, position_perso)
+    #Rafraichissement
+    pygame.display.flip()
+    
+    

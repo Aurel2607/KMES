@@ -1,0 +1,7 @@
+
+
+import math as mathematic
+
+
+print("sqrt(16)=", mathematic.sqrt(16))
+
