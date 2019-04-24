@@ -3,3 +3,4 @@ INTERPRETER_PATH_NEW=<xml>\n<name>python</name>\n<version>3.7</version>\n<execut
 PYDEV_FUNDING_SHOW_AT_TIME_2016=1556263503387
 SIMPLE_RESOURCE_RENAME=true
 eclipse.preferences.version=1
+org.python.pydev.editor.templates.PyTemplatePreferencesPage=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="org.python.pydev.editor.templates.python" deleted\="false" description\="try keyword" enabled\="true" name\="try">try\:&\#13;\r\n\t${cursor}&\#13;\r\nexcept\:&\#13;\r\n\t</template></templates>

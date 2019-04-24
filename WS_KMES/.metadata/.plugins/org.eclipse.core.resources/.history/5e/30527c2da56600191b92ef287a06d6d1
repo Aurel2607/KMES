@@ -1,0 +1,46 @@
+'''
+Created on 24 avr. 2019
+
+@author: apajadon
+'''
+
+import random
+
+
+
+if __name__ == '__main__':
+    somme = int(input("Somme de départ?:"))
+    tour = 1
+    while somme > 0:
+        print("")
+        print("-------")
+        print("Tour n°", tour)
+        print("-------")
+        
+        # somme à miser
+        sommeMise = 0
+        while sommeMise <= 0 and sommeMise > somme
+            try:
+                sommeMise = int(input("Somme à miser?:"))
+                if (sommeMise <= 0) or sommeMise > somme
+                    print("Impossible de miser cette somme")
+            except ValueError:
+                print("Vous n'avez pas saisi un nombre")
+                
+        
+        numMise = int(input("Numéro à miser?:"))
+        numAlea = random.randrange(0,49)
+        print("Numero Sorti:", numAlea)
+        if(numMise == numAlea):
+            somme += 3 * sommeMise
+            print("Bingo")
+        else:
+            if((numAlea%2) == (numMise%2)):
+                somme += ceil(sommeMise/2)
+                print("Même Couleur")
+            else:
+                somme -= sommeMise
+                print("Perdu")
+        print("Il vous reste", somme)
+        tour +=1
+    print("Vous avez tout perdu!!!")

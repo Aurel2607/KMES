@@ -1,0 +1,14 @@
+'''
+Created on 24 avr. 2019
+
+@author: apajadon
+'''
+import os
+from packagePerso.multipli import *
+
+
+if __name__ == '__main__':
+    # test de la fonction table
+    table(3, 20)
+    os.system("pause")
+

@@ -1,0 +1,35 @@
+'''
+Created on 24 avr. 2019
+
+@author: apajadon
+'''
+
+import random
+
+
+
+if __name__ == '__main__':
+    somme = int(input("Somme de départ?:"))
+    tour = 1
+    while somme > 0:
+        print("")
+        print("-------")
+        print("Tour n°", tour)
+        print("-------")
+        sommeMise = int(input("Somme à miser?:"))
+        numMise = int(input("Numéro à miser?:"))
+        numAlea = random.randrange(0,49)
+        print("Numero Sorti:", numAlea)
+        if(numMise == numAlea):
+            somme += 3 * sommeMise
+            print("Bingo")
+        else:
+            if(numAlea % numMise == 0):
+                somme += sommeMise/2
+                print("Même Couleur")
+            else:
+                somme -= sommeMise
+                print("Perdu")
+        print("Il vous reste", somme)
+        tour +=1
+    print("Vous avez tout perdu!!!")

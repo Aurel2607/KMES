@@ -1,0 +1,15 @@
+'''
+Created on 24 avr. 2019
+
+@author: apajadon
+'''
+
+
+if __name__ == '__main__':
+    annee = input("Entrez l'année: ")
+    try:
+        annee = int(annee)
+    except:
+        print("Erreur lors de la conversion de l'année.")
+        
+        

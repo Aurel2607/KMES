@@ -1,0 +1,12 @@
+'''
+Created on 24 avr. 2019
+
+@author: apajadon
+'''
+
+from random import randrange
+
+
+
+if __name__ == '__main__':
+    pass

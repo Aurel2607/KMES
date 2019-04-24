@@ -1,0 +1,18 @@
+'''
+Created on 24 avr. 2019
+
+@author: apajadon
+'''
+
+import random
+
+
+
+if __name__ == '__main__':
+    sommeDeDepart = int(input("Somme de départ?:"))
+    tour = 1
+    while sommeDeDepart > 0:
+        print("Tour n°", tour)
+        sommeMise = int(input("Somme à miser?:"))
+        
+        tour +=1
