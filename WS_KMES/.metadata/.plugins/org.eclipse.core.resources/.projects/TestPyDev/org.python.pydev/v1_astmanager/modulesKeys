@@ -1,4 +1,12 @@
 MODULES_MANAGER_V2
+00_firstScript|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\00_firstScript.py
+00_windows|C:\DevPerso\KMES2\WS_KMES\TestPyDev\SrcGui\00_windows.py
+01_bissextile|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\01_bissextile.py
+02_bissextile2|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\02_bissextile2.py
+03_BoucleWhile|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\03_BoucleWhile.py
+04_boucleFor|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\04_boucleFor.py
+05_fonction|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\05_fonction.py
+06_modules|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\06_modules.py
 07_modules|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\07_modules.py
 08_Exceptions|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\08_Exceptions.py
 09_ZCasino|C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\09_ZCasino.py

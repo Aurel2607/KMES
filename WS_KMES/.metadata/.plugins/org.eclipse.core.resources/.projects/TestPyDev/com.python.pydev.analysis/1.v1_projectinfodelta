@@ -1,9 +1,7 @@
-INSTUP09_ZCasino
-C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\09_ZCasino.py
-INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0
-somme=1
-09_ZCasino=2
-sommeMise=4
-numMise=5
-tour=3
-numAlea=6
+INSTUP10_listeEtTuples1
+C:\DevPerso\KMES2\WS_KMES\TestPyDev\Src\10_listeEtTuples1.py
+INFOS:&&2|1|2|0&&2|3|2|0&&3|4|2|0
+convertToFlottant=1
+fonction_inconnue=3
+var=4
+10_listeEtTuples1=2
